@@ -53,7 +53,7 @@ public class TrackServiceImpl implements TrackService {
 
     @Override
     public List<Track> updateTrackById(String name) {
-//        Gets the reference to the Track object (lazy)
+//        get the track by name
         List<Track> tracks = trackRepository.searchTrackByName(name);
         return tracks;
 
